@@ -76,11 +76,11 @@
 
 ### Jest и тестирование
 
-[Презентация](https://docs.google.com/presentation/d/12uSy5L6SNxePdOioFQLKlkRfnnA6LC2n4QAPUpUGg0c/edit?usp=sharing)
+[Презентация](https://docs.google.com/presentation/d/1XMcLyZY8TbY15t9En-ouF9VwaIHteHvTYjNdfyz149s/edit#slide=id.p1)
 
 ### React-Testing-Library
 
-[Презентация](https://docs.google.com/presentation/d/1u2U2wRWhNHG8bMRRbv2l8snZlz4qczfao7QD-3LwKDE/edit?usp=sharing)
+[Презентация](https://docs.google.com/presentation/d/1u2U2wRWhNHG8bMRRbv2l8snZlz4qczfao7QD-3LwKDE/edit#slide=id.g2effa42fd40_0_0)
 
 ### React router
 
