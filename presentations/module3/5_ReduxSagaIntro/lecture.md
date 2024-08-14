@@ -245,19 +245,42 @@ function* genFunc() {
 }
 ```
 
+### Евли хотим свой forEach (не нужно так делать)
+
+```js
+Array.prototype.forEachGen = function* (callback) {
+  for (const item of this) {
+    yield* callback(item);
+  }
+};
+
+// Пример использования
+function* genFunc() {
+  yield* ["a", "b"].forEachGen(function* (x) {
+    yield x;
+  });
+}
+
+for (const value of genFunc()) {
+  console.log(value); // Будет выводить "a", "b"
+}
+```
+
 <!--v-->
 
 ### Flow
 
 ```js
 function* genFunc2() {
- try {
-   console.log("Started");
-   yield;
- } finally {
-   yield "Not done, yet!";
- }
+  try {
+    console.log("Started");
+    yield;
+  } finally {
+    yield "Not done, yet!";
+  }
 }
+
+const genObj2 = genFunc2()
 
 genObj2.next()
 > Started
