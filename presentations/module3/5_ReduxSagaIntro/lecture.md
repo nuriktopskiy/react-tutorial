@@ -20,6 +20,7 @@ description: Generators and Iterators
 * Iterators
 * Async iterators
 * Generators
+* Async Generators
 * The SAGA pattern
 
 <!--v-->
