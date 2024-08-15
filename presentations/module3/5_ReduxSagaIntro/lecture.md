@@ -18,7 +18,6 @@ description: Generators and Iterators
 ### Что сегодня пройдём?
 
 * Generators
-* Iterators
 * Async iterators
 * The SAGA pattern
 
@@ -65,6 +64,19 @@ export const createSimpleIterator = (from: number, to: number) => ({
  }),
 });
 ```
+
+
+<!--v-->
+
+### Как с этим работать
+
+```js
+const simpleIterator = createSimpleIterator(1, 5);
+for (const value of simpleIterator) {
+  // value of iterator ...
+}
+```
+
 
 
 <!--v-->
@@ -345,16 +357,6 @@ genObj1.throw(new Error("Problem!"));
 <!--v-->
 
 ## Вопросы
-
-<!--v-->
-
-### Как с этим работать
-
-```js
-const simpleIterator = createSimpleIterator(1, 5);
-for (const value of simpleIterator) {
-  // value of iterator ...
-```
 
 <!--v-->
 
