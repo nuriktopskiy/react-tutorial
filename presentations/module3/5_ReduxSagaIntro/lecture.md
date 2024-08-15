@@ -46,6 +46,27 @@ description: Generators and Iterators
 * **Потенциал для бесконечных последовательностей**: Генераторы позволяют работать с потенциально бесконечными последовательностями данных, такими как потоки или генерация случайных чисел.
 
 
+<!--s-->
+
+## Iterators
+
+<!--v-->
+
+### Создание простого итератора
+
+```js
+export const createSimpleIterator = (from: number, to: number) => ({
+ from,
+ to,
+ [Symbol.iterator]: () => ({
+   next: () => {
+     return from <= to ? { done: false, value: from++ } : { done: true };
+   },
+ }),
+});
+```
+
+
 <!--v-->
 
 ## Generators
@@ -324,26 +345,6 @@ genObj1.throw(new Error("Problem!"));
 <!--v-->
 
 ## Вопросы
-
-<!--s-->
-
-## Iterators
-
-<!--v-->
-
-### Создание простого итератора
-
-```js
-export const createSimpleIterator = (from: number, to: number) => ({
- from,
- to,
- [Symbol.iterator]: () => ({
-   next: () => {
-     return from <= to ? { done: false, value: from++ } : { done: true };
-   },
- }),
-});
-```
 
 <!--v-->
 
