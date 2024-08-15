@@ -17,8 +17,9 @@ description: Generators and Iterators
 
 ### Что сегодня пройдём?
 
-* Generators
+* Iterators
 * Async iterators
+* Generators
 * The SAGA pattern
 
 <!--v-->
