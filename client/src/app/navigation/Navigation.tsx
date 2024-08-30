@@ -12,7 +12,6 @@ const getWithSpinSuspense = getWithSuspense(<SpinLoading />);
 const homeScreen = getWithPageSuspense(lazy(() => import('src/pages/Home')));
 const profileScreen = getWithPageSuspense(lazy(() => import('src/pages/ProfileScreen')));
 const authScreen = getWithSpinSuspense(lazy(() => import('src/pages/AuthScreen')));
-const teachersScreen = getWithPageSuspense(lazy(() => import('src/pages/Teachers')));
 const examplesScreen = getWithPageSuspense(lazy(() => import('src/pages/Examples')));
 const lessonsScreen = getWithPageSuspense(lazy(() => import('src/pages/Lessons')));
 const homeWorksScreen = getWithPageSuspense(lazy(() => import('src/pages/HomeWorks')));
@@ -24,7 +23,6 @@ export const Navigation: FC = () => {
   return (
     <Routes>
       <Route index element={homeScreen} />
-      <Route path="teachers" element={teachersScreen} />
       <Route path="examples/*" element={examplesScreen}>
         <Route path=":mode" element={examplesScreen} />
       </Route>
